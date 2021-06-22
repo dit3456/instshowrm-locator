@@ -1,0 +1,360 @@
+/*All filters*/
+#pac-card{
+    margin-top: 0;
+    overflow-y: auto;
+    height: 100%;
+    width: 25%;
+    background: white;
+}
+
+/*the email, website and route link on the cards*/
+.card-link{
+    color: #e3001a;
+    font-weight: 500;
+}
+
+.showroom{
+    display: block;
+}
+
+.installer{
+    display: block;
+}
+
+#title{
+    margin-top: 0;
+    margin-left: 5%;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*Radius filter*/
+#s_selectRadius{
+    border: none;
+    display: block;
+    width: 85%;
+    height: 5%;
+    font-size: medium;
+    margin-left: 5%;
+    margin-top: 2%;
+    background: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+#s_selectRadius:hover{
+    background: rgb(232, 232, 232);
+}
+
+#label_showroomOrInstaller{
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+    margin-left: 12px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+#s_selectInstallerOrShowroom{
+    display: block;
+}
+
+/*Installer or showroom filter*/
+.boxed label {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    color: rgb(104, 104, 104);
+    display: inline-block;
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 5%;
+    transition: all 0.3s;
+    border-bottom: 2px solid lightgray;
+}
+
+.boxed label:hover{
+    background: whitesmoke;
+}
+
+.boxed input[type="radio"] {
+    display: none;
+}
+
+.boxed input[type="radio"]:checked + label {
+    background: #e3001a;
+    color: white;
+    cursor: default;
+}
+
+/*Searchbar*/
+#pac-input{
+    border: none;
+    width: 85%;
+    height: 5%;
+    font-size: medium;
+    margin-left: 5%;
+    background: rgb(240, 240, 240);
+}
+
+/*all individual radio button + label*/
+.div_filterDiv{
+    display: inline-block;
+    padding: 16px 12px;
+    width: 90%;
+    outline-style: solid;
+    outline-color: rgb(224, 224, 224);
+    outline-width: 1px;
+    cursor: pointer;
+}
+
+.div_filterDiv:hover{
+    background: whitesmoke;
+}
+
+/*#region installer*/
+
+#chooseSpecialisationLabel{
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 6%;
+    margin-left: 12px;
+}
+
+#form_selectSpecialisation div{
+
+}
+
+/*Specialisation radio buttons*/
+#form_selectSpecialisation div input[type="radio"]{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+#form_selectSpecialisation div label{
+    font-size: medium;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/*#endregion*/
+
+/*#region category filter*/
+#div_categoryTitle{
+    display: inline-block;
+    margin-bottom: 1%;
+}
+
+/*reset button*/
+#button_resetCategory{
+    margin-left: 15px;
+    border: none;
+    color: #e3001a;
+    background: white;
+    cursor: pointer;
+}
+
+#button_resetCategory:hover{
+    color: #ba160c;
+}
+
+#label_category{
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+#form_selectCategory{
+    max-height: 63%;
+    width: 100%;
+    overflow-y: auto;
+    outline-style: solid;
+    outline-color: rgb(224, 224, 224);
+    outline-width: 1px;
+}
+
+#form_selectCategory div input[type="radio"]{
+    transform: scale(1.5);
+    cursor: pointer;
+    /*display: none;*/
+}
+/*label of radiobutton*/
+#form_selectCategory div label{
+    display: inline-block;
+    font-size: medium;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/*#endregion*/
+
+/*#region product filter*/
+
+#form_selectProduct{
+    width: 100%;
+    max-height: 50%;
+    overflow-y: auto;
+    outline-style: solid;
+    outline-color: rgb(224, 224, 224);
+    outline-width: 1px;
+}
+/*product title label*/
+#label_product{
+    display: inline-block;
+    margin-bottom: 1%;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+/*individual radio button*/
+#form_selectProduct div input[type="radio"]{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+/*individual label of radio button*/
+#form_selectProduct div label{
+    font-size: medium;
+    margin-left: 5px;
+    cursor: pointer;
+}
+/*#endregion*/
+
+/*#region custom radio buttons*/
+.div_filterDiv [type="radio"]:checked,
+.div_filterDiv [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.div_filterDiv [type="radio"]:checked + label,
+.div_filterDiv [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+.div_filterDiv [type="radio"]:checked + label:before,
+.div_filterDiv [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid black;
+    border-radius: 100%;
+    background: #fff;
+}
+.div_filterDiv [type="radio"]:checked + label:after,
+.div_filterDiv [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #e3001a;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+}
+.div_filterDiv [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.div_filterDiv [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/*#endregion*/
+
+/*#region scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px gray;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(170, 170, 170);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(159, 159, 159);
+}
+/*#endregion*/
+
+/*#region Collapsable filters*/
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+    border-radius: 0 15% 15% 0;
+    cursor: pointer;
+    background-color: rgb(40, 40, 40);
+    opacity: 0.75;
+    color: white;
+    padding: 9px 8px;
+    border: none;
+}
+
+/*Button position*/
+#main{
+    margin-top: 3%;
+    margin-left: 25%;
+}
+
+.openbtn:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+/*Arrow*/
+.arrow button p{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right button p{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left button p{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+/*Slide animation*/
+@keyframes slideLeft {
+from{margin-left: 25%;}
+    to{margin-left: 0;}
+}
+
+@keyframes slideRight {
+    from{margin-left: 0;}
+    to{margin-left: 25%;}
+}
+
+@keyframes fold {
+    from{width: 25%;}
+    to{width: 0;}
+}
+
+@keyframes unfold {
+    from{width: 0;}
+    to{width: 25%;}
+}
+/*#endregion*/

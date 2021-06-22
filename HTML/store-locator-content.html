@@ -1,0 +1,824 @@
+<link rel="stylesheet" href="../CSS/LocatorStylesheet.css">
+
+<script src="../Javascript/Locator.js"></script>
+<script src="../Javascript/Locator.Installer.js"></script>
+<script src="../Javascript/Locator.Showroom.js"></script>
+
+
+<!--DELETE THIS \/ -->
+<!--Added a width and height to the map for testing purposes-->
+<div id="map" style="background-image: url('https://www.zehnder.nl/sites/zehnder.nl/files/map.png'); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+<!--Cant find id=node-31333 on line 1452. Added empty div with that id for testing purposes-->
+<div id="node-31333"></div>
+<!--Until this /\-->
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.10.4/polyfill.min.js"></script>
+<script type="text/javascript" src="../node_modules/papaparse/papaparse.js"></script>
+<script type="text/csv" id="unparsed-csv-I" src="../CSV_Files/Installers_Database.csv"></script>
+<script type="text/csv" id="unparsed-csv-S" src="../CSV_Files/Showrooms_Database.csv"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+<!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBIJrfc1DxjzAl9AlJl1QeyAHsKyWaa4oQ"></script>-->
+<script type="text/javascript">
+  /*
+  * Copyright 2017 Google Inc. All rights reserved.
+  *
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
+  * file except in compliance with the License. You may obtain a copy of the License at
+  *
+  *     http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing, software distributed under
+  * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+  * ANY KIND, either express or implied. See the License for the specific language governing
+  * permissions and limitations under the License.
+  */
+
+  //coordinates of the place in searchbar
+  let InputCoords = {lat: 52.2093661, lng: 4.1585262};
+  //the zoom level of the map
+  let ZoomLevel = 8;
+
+  let ShowroomsAndInstallers = {
+      type: "FeatureCollection",
+      features: [],
+  }
+
+
+  //Fills the Locator.Showroom.filteredShowrooms.features array
+  const ShowroomPromise = Locator.Showroom.GetShowrooms();
+
+  //Fills the Locator.Installers.Installers.features array
+  const InstallerPromise = Locator.Installer.GetInstallers();
+
+
+  //#region Style
+
+  // Style credit: https://snazzymaps.com/style/1/pale-dawn
+  var mapStyle = [
+    {
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#f5f5f5",
+        },
+      ],
+    },
+    {
+      elementType: "labels.icon",
+      stylers: [
+        {
+          visibility: "off",
+        },
+      ],
+    },
+    {
+      elementType: "labels.text.fill",
+      stylers: [
+        {
+          color: "#616161",
+        },
+      ],
+    },
+    {
+      elementType: "labels.text.stroke",
+      stylers: [
+        {
+          color: "#f5f5f5",
+        },
+      ],
+    },
+    {
+      featureType: "administrative.land_parcel",
+      elementType: "labels.text.fill",
+      stylers: [
+        {
+          color: "#bdbdbd",
+        },
+      ],
+    },
+    {
+      featureType: "poi",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#eeeeee",
+        },
+      ],
+    },
+    {
+      featureType: "poi",
+      elementType: "labels.text.fill",
+      stylers: [
+        {
+          color: "#757575",
+        },
+      ],
+    },
+    {
+      featureType: "poi.park",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#e5e5e5",
+        },
+      ],
+    },
+    {
+      featureType: "poi.park",
+      elementType: "labels.text.fill",
+      stylers: [
+        {
+          color: "#9e9e9e",
+        },
+      ],
+    },
+    {
+      featureType: "road",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#ffffff",
+        },
+      ],
+    },
+    {
+      featureType: "road.arterial",
+      elementType: "labels.text.fill",
+      stylers: [
+        {
+          color: "#757575",
+        },
+      ],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#dadada",
+        },
+      ],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "labels.text.fill",
+      stylers: [
+        {
+          color: "#616161",
+        },
+      ],
+    },
+    {
+      featureType: "road.local",
+      elementType: "labels.text.fill",
+      stylers: [
+        {
+          color: "#9e9e9e",
+        },
+      ],
+    },
+    {
+      featureType: "transit.line",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#e5e5e5",
+        },
+      ],
+    },
+    {
+      featureType: "transit.station",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#eeeeee",
+        },
+      ],
+    },
+    {
+      featureType: "water",
+      elementType: "geometry",
+      stylers: [
+        {
+          color: "#c9c9c9",
+        },
+      ],
+    },
+    {
+      featureType: "water",
+      elementType: "labels.text.fill",
+      stylers: [
+        {
+          color: "#9e9e9e",
+        },
+      ],
+    },
+  ];
+
+  //#endregion
+
+  /**
+  * Initialize the Google Map.
+  */
+  function initMap() {
+
+      console.log(Locator.Installer.FilteredInstallers);
+      Promise.all([ShowroomPromise, InstallerPromise])
+          .then(() => {
+              Locator.FillMap();
+
+    // Create the map.
+    let map = new google.maps.Map(document.getElementById("map"), {
+      zoom: ZoomLevel,
+      center: { lat: InputCoords.lat, lng: InputCoords.lng },
+      styles: mapStyle,
+      mapTypeControl: false,
+      zoomControl: false,
+      streetViewControl: false,
+      scaleControl: false,
+    });
+
+    // Load the stores GeoJSON onto the map.
+    map.data.addGeoJson(ShowroomsAndInstallers, { idPropertyName: "storeid" });
+
+    // Define the custom marker icons, using the store's "category".
+    map.data.setStyle(function (feature) {
+      return {
+        icon: {
+          url:
+            "https://www.zehnder.nl/sites/zehnder.nl/files/styles/col-8/public/pictures/maps-marker.png",
+          scaledSize: new google.maps.Size(20, 20),
+        },
+        title: feature.getProperty("name"),
+      };
+    });
+
+    var apiKey = "AIzaSyA33HtNtOI4F1aiywevr_K6YaJkAfuN-4w";
+    var infoWindow = new google.maps.InfoWindow();
+
+    ("use strict");
+
+    // Show the information for a store when its marker is clicked.
+    map.data.addListener("click", function (event) {
+      var name = event.feature.getProperty("name");
+      var address = event.feature.getProperty("address");
+      var zipcode = event.feature.getProperty("zipcode");
+      var email = event.feature.getProperty("email");
+      var website = event.feature.getProperty("website");
+      var position = event.feature.getGeometry().get();
+      var encodedAddress = encodeURI(address + " " + zipcode);
+      if (website.substring(0, 4) != "http" && website.substring(0, 2) != "//") {
+        website = "http://" + website;
+      }
+      var content = '<div class="info-window">\n            <h2>'
+        .concat(
+          name,
+          '</h2>\n            <div class="left">\n                <p>'
+        )
+        .concat(address, '</p>\n                <p style="margin-bottom: 15px;">')
+        .concat(
+          zipcode,
+          '</p>\n                <p>\n                    <img style="margin-right: 5px;" height="20" src="//www.gstatic.com/images/icons/material/system_gm/1x/place_gm_blue_24dp.png">\n                    <a class="card-link" href="mailto:'
+        )
+        .concat(email, '">')
+        .concat(
+          email,
+          '</a>\n                </p>\n                <p>\n                    <img style="margin-right: 5px;" src="//www.gstatic.com/images/icons/material/system_gm/1x/public_gm_blue_24dp.png" height="20">\n                    <a class="card-link" href="'
+        )
+        .concat(website, '" target="_blank">')
+        .concat(
+          website,
+          '</a>\n                </p>\n            </div>\n            <div class="right">\n                <a class="card-link" target="_blank" href="https://www.google.com/maps/dir//'
+        )
+        .concat(
+          encodedAddress,
+          '" class="route">\n                    <img src="https://www.gstatic.com/images/icons/material/system/1x/directions_white_18dp.png" />\n                    <p>Route</p>\n                </a>\n            </div>\n        </div>'
+        );
+      infoWindow.setContent(content);
+      infoWindow.setPosition(position);
+      infoWindow.setOptions({
+        pixelOffset: new google.maps.Size(0, -30),
+      });
+      infoWindow.open(map);
+
+      if (window.outerWidth < 500) {
+        map.panBy(0, -160);
+      }
+    });
+
+    // Build and add the search bar
+    var card = document.createElement("div");
+    var titleBar = document.createElement("div");
+    var title = document.createElement("h2");
+    var container = document.createElement("div");
+    var input = document.createElement("input");
+    var button = document.createElement("input");
+
+    // Build and add the filters
+    var div_showroomOrInstaller = document.createElement("div");
+    var radio_installer = document.createElement("input");
+    var radio_showroom = document.createElement("input");
+    var label_installer = document.createElement("label");
+    var label_showroom = document.createElement("label");
+    var textNode_showroom = document.createTextNode("Showrooms");
+    var textNode_installer = document.createTextNode("Installateurs");
+    var select_radius = document.createElement("select");
+    var form_category = document.createElement("form");
+    var label_category = document.createElement("label");
+    var textNode_category = document.createTextNode("Kies een producttype");
+    var form_product = document.createElement("form");
+    var label_product = document.createElement("label");
+    var textNode_product = document.createTextNode("Kies een kleur");
+    var form_specialisation = document.createElement("form");
+    var label_chooseSpecialisation = document.createElement("label");
+    var textNode_chooseSpecialisation = document.createTextNode("Kies een specialisatie:");
+    var div_categoryTitle = document.createElement("div");
+    var button_resetCategory = document.createElement("button");
+    var textNode_resetCategory = document.createTextNode("Filters wissen");
+    var img_buttonImage = document.createElement("img");
+    var label_showroomOrInstaller = document.createElement("label");
+    var textnode_showroomOrInstaller = document.createTextNode("Wat zoekt u?");
+    var div_slider = document.createElement("div");
+    var button_slider = document.createElement("button");
+    var p_slider = document.createElement("p");
+
+    var options = {
+      componentRestrictions: { country: "nl" },
+    };
+
+    card.setAttribute("id", "pac-card");
+    card.classList.add("pac-card");
+    title.setAttribute("id", "title");
+    title.textContent = "Zehnder partner in de buurt";
+    titleBar.setAttribute("id", "titleBar");
+    titleBar.appendChild(title);
+    container.setAttribute("id", "pac-container");
+    input.setAttribute("id", "pac-input");
+    input.setAttribute("type", "text");
+    input.setAttribute("placeholder", "Voer een adres in");
+    input.setAttribute("value", Locator.searchbarInput);
+    container.appendChild(input);
+    button.setAttribute("type", "button");
+    button.setAttribute("value", "Toon installateurs");
+    card.appendChild(titleBar);
+    card.appendChild(container);
+
+    div_slider.setAttribute("id", "main");
+    div_slider.setAttribute("class", "arrow left");
+    button_slider.setAttribute("class", "openbtn");
+    button_slider.setAttribute("onClick", "Locator.SlideFilters()");
+    button_slider.appendChild(p_slider);
+    div_slider.appendChild(button_slider)
+
+    select_radius.setAttribute("id", "s_selectRadius");
+    select_radius.setAttribute("onchange", "Locator.FilterRadius_onchange(this.value, InputCoords, this.selectedIndex)");
+
+    label_showroomOrInstaller.setAttribute("id", "label_showroomOrInstaller");
+    label_showroomOrInstaller.appendChild(textnode_showroomOrInstaller);
+
+    div_showroomOrInstaller.setAttribute("class", "boxed");
+    radio_showroom.setAttribute("type", "radio");
+    radio_showroom.setAttribute("id", "radio_showroom");
+    radio_showroom.setAttribute("value", "Showrooms");
+    radio_showroom.setAttribute("onclick", "Locator.FilterInstallerOrShowroom_onclick(this.value)");
+    radio_showroom.setAttribute("name", "installerOrShowroom");
+    if (Locator.selectedShowroomOrInstaller == "Showrooms"){
+        radio_showroom.setAttribute("checked", "true");
+    }
+
+    radio_installer.setAttribute("type", "radio");
+    radio_installer.setAttribute("id", "radio_installer");
+    radio_installer.setAttribute("value", "Installateurs");
+    radio_installer.setAttribute("onclick", "Locator.FilterInstallerOrShowroom_onclick(this.value)");
+    radio_installer.setAttribute("name", "installerOrShowroom");
+    if (Locator.selectedShowroomOrInstaller == "Installateurs"){
+      radio_installer.setAttribute("checked", "true");
+    }
+
+    label_showroom.setAttribute("for", "radio_showroom");
+    label_showroom.setAttribute("id", "label_showroom");
+    label_showroom.appendChild(textNode_showroom);
+
+    label_installer.setAttribute("for", "radio_installer");
+    label_installer.setAttribute("id", "label_installer");
+    label_installer.appendChild(textNode_installer);
+
+    div_showroomOrInstaller.appendChild(radio_showroom);
+    div_showroomOrInstaller.appendChild(label_showroom);
+    div_showroomOrInstaller.appendChild(radio_installer);
+    div_showroomOrInstaller.appendChild(label_installer);
+
+    label_category.setAttribute("id", "label_category");
+    label_category.appendChild(textNode_category);
+
+    img_buttonImage.setAttribute("src", "https://cdn.discordapp.com/attachments/752497193230794842/852811675425701918/undo-5-24.png");
+
+    button_resetCategory.setAttribute("id", "button_resetCategory");
+    button_resetCategory.setAttribute("type", "button");
+    button_resetCategory.setAttribute("onclick", "Locator.CategoryReset_onclick()");
+    button_resetCategory.appendChild(textNode_resetCategory);
+
+    div_categoryTitle.setAttribute("id", "div_categoryTitle");
+    div_categoryTitle.appendChild(label_category);
+    div_categoryTitle.appendChild(button_resetCategory);
+
+    form_category.setAttribute("id", "form_selectCategory");
+    form_category.setAttribute("class", "showroom");
+
+    label_product.setAttribute("id", "label_product");
+    label_product.appendChild(textNode_product);
+
+    form_product.setAttribute("id", "form_selectProduct");
+    form_product.setAttribute("class", "showroom");
+
+    label_chooseSpecialisation.setAttribute("id", "chooseSpecialisationLabel");
+    label_chooseSpecialisation.appendChild(textNode_chooseSpecialisation);
+
+    form_specialisation.setAttribute("id", "form_selectSpecialisation");
+    form_specialisation.setAttribute("class", "installer");
+    form_specialisation.appendChild(label_chooseSpecialisation);
+
+        //Category = product type!!
+      //Filling the select_category filter
+      let i;
+      let categoryOptions = [];
+      for(i = 0; i < Locator.Showroom.AllShowrooms.features.length; i++) {
+          if(categoryOptions.includes(Locator.Showroom.AllShowrooms.features[i].properties.category) || Locator.Showroom.AllShowrooms.features[i].properties.category == "")
+          {
+
+          }
+          else
+          {
+              categoryOptions.push(Locator.Showroom.AllShowrooms.features[i].properties.category);
+          }
+      }
+      categoryOptions.sort();
+
+      let appendCategory = function (item, index){
+          let div = document.createElement("div")
+          let radio = document.createElement("input");
+          let label = document.createElement("label");
+          let textNode = document.createTextNode(item);
+
+          div.setAttribute("id", "div_categoryFilter" + index);
+          div.setAttribute("class", "div_filterDiv");
+          radio.setAttribute("class", "radio");
+          radio.setAttribute("id", "radio_category" + index);
+          radio.setAttribute("type", "radio");
+          radio.setAttribute("value", item);
+          radio.setAttribute("onchange", "Locator.FilterCategory_onclick(this.value)");
+
+          label.setAttribute("for", "radio_category" + index);
+          label.appendChild(textNode);
+
+          if(item == Locator.selectedCategory){
+              radio.checked = true;
+          }
+
+          //Makes whole div clickable
+          $(function() {
+              $("body").click(function(e) {
+                  if (e.target.id == "div_categoryFilter" + index || $(e.target).parents("#div_categoryFilter" + index).length) {
+                      document.getElementById("radio_category" + index).click();
+                  }
+              });
+          });
+
+          radio.appendChild(document.createTextNode(item));
+          div.appendChild(radio);
+          div.appendChild(label);
+          form_category.appendChild(div);
+      };
+      if (Locator.selectedCategory == ""){
+          categoryOptions.forEach(appendCategory);
+      }
+      else{
+          categoryOptions = [];
+          categoryOptions.push(Locator.selectedCategory);
+          categoryOptions.forEach(appendCategory);
+      }
+
+    //product = kleur!!
+    //Filling the select_product filter
+      let j;
+      let productOptions = [];
+
+      for(j = 0; j < Locator.Showroom.HelpArrayProductFilter.length; j++) {
+          if(productOptions.includes(Locator.Showroom.HelpArrayProductFilter[j].properties.product)
+              || Locator.Showroom.HelpArrayProductFilter[j].properties.product == "")
+          {
+
+          }
+          else
+          {
+              productOptions.push(Locator.Showroom.HelpArrayProductFilter[j].properties.product);
+          }
+      }
+      productOptions.sort();
+      productOptions.unshift("Alle kleuren");
+
+      let appendProduct = function (item, index){
+          let div = document.createElement("div");
+          let radio = document.createElement("input");
+          let label = document.createElement("label");
+          let textNode = document.createTextNode(item);
+
+          div.setAttribute("id", "div_productFilter" + index);
+          div.setAttribute("class", "div_filterDiv");
+          radio.setAttribute("class", "radio");
+          radio.setAttribute("id", "radio_product" + index);
+          radio.setAttribute("type", "radio");
+          radio.setAttribute("value", item);
+          radio.setAttribute("onchange", "Locator.FilterProduct_onclick(this.value)");
+
+          label.setAttribute("for", "radio_product" + index);
+          label.appendChild(textNode);
+
+          if(item == Locator.selectedProduct){
+              radio.checked = true;
+          }
+
+          //Makes whole div clickable
+          $(function() {
+              $("body").click(function(e) {
+                  if (e.target.id == "div_productFilter" + index || $(e.target).parents("#div_productFilter" + index).length) {
+                      document.getElementById("radio_product" + index).click();
+                  }
+              });
+          });
+
+          radio.appendChild(document.createTextNode(item));
+          div.appendChild(radio);
+          div.appendChild(label);
+          form_product.appendChild(div);
+      };
+              productOptions.forEach(appendProduct);
+
+      //Filling the select_specialisation filter
+      let specialisationOptions = ["Alle specialisaties", "Onderhoud", "Nieuw product", "Storing"];
+      let appendSpecialisation = function (item, index){
+          let div = document.createElement("div")
+          let radio = document.createElement("input");
+          let label = document.createElement("label");
+          let textNode = document.createTextNode(item);
+
+          div.setAttribute("id", "div_specialisationFilter" + index);
+          div.setAttribute("class", "div_filterDiv");
+          radio.setAttribute("class", "radio");
+          radio.setAttribute("id", "radio_specialisation" + index);
+          radio.setAttribute("type", "radio");
+          radio.setAttribute("value", item);
+          radio.setAttribute("onchange", "Locator.FilterSpecialisation_onclick(this.value)");
+
+          label.setAttribute("for", "radio_specialisation" + index);
+          label.appendChild(textNode);
+
+          if(item == Locator.selectedSpecialisation){
+              radio.checked = true;
+          }
+
+          //Makes whole div clickable
+          $(function() {
+              $("body").click(function(e) {
+                  if (e.target.id == "div_specialisationFilter" + index || $(e.target).parents("#div_specialisationFilter" + index).length) {
+                      document.getElementById("radio_specialisation" + index).click();
+                  }
+              });
+          });
+
+          radio.appendChild(document.createTextNode(item));
+          div.appendChild(radio);
+          div.appendChild(label);
+          form_specialisation.appendChild(div);
+      };
+        specialisationOptions.forEach(appendSpecialisation);
+
+    //Filling the select_radius combobox
+    let radiusOptions = ["Afstand", "5km", "10km", "20km", "30km"];
+    let appendRadius = function (item, index){
+        let option = document.createElement("option");
+
+        if(item != "Afstand"){
+            //Turns the number in the string into an integer
+            let distance = item.match( /\d+/g).map(Number);
+            option.setAttribute("value", distance[0]);
+        }
+
+        if(index == Locator.selectedRadiusIndex){
+            option.selected = true;
+        }
+        option.appendChild(document.createTextNode(item));
+        select_radius.appendChild(option);
+    };
+    radiusOptions.forEach(appendRadius);
+    select_radius.selectedIndex = Locator.selectedRadiusIndex;
+
+
+    //Appending the new filters
+    card.appendChild(select_radius);
+    card.appendChild(label_showroomOrInstaller);
+    card.appendChild(div_showroomOrInstaller);
+    //Only show filters when showrooms are selected
+    if (Locator.selectedShowroomOrInstaller == "Showrooms"){
+        card.appendChild(div_categoryTitle);
+        card.appendChild(form_category);
+        if(Locator.selectedCategory != ""){
+            card.appendChild(label_product);
+            card.appendChild(form_product);
+        }
+    }
+    //Only show filters when installers are selected
+    if (Locator.selectedShowroomOrInstaller == "Installateurs"){
+        card.appendChild(form_specialisation);
+    }
+
+    if (window.outerWidth > 767) {
+      map.controls[google.maps.ControlPosition.LEFT_CENTER].push(card);
+        map.controls[google.maps.ControlPosition.LEFT_TOP].push(div_slider);
+    } else {
+      map.controls[google.maps.ControlPosition.TOP_CENTER].push(card);
+    }
+
+    setTimeout(function () {
+      document.getElementById('pac-card-placeholder').remove();
+
+      if (window.inputFieldHasFocus) {
+        document.getElementById('pac-input').focus();
+      }
+    }, 750)
+
+    // Make the search bar into a Places Autocomplete search bar and select
+    // which detail fields should be returned about the place that
+    // the user selects from the suggestions.
+    var autocomplete = new google.maps.places.Autocomplete(input, options);
+
+    autocomplete.setFields(["address_components", "geometry", "name"]);
+
+    // Set the origin point when the user selects an address
+    var originMarker = new google.maps.Marker({ map: map });
+    originMarker.setVisible(false);
+    let originLocation = map.getCenter();
+
+    function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+      try {
+        var info = gen[key](arg);
+        var value = info.value;
+      } catch (error) {
+        reject(error);
+        return;
+      }
+      if (info.done) {
+        resolve(value);
+      } else {
+        Promise.resolve(value).then(_next, _throw);
+      }
+    }
+
+    function _asyncToGenerator(fn) {
+      return function () {
+        var self = this,
+          args = arguments;
+        return new Promise(function (resolve, reject) {
+          var gen = fn.apply(self, args);
+          function _next(value) {
+            asyncGeneratorStep(
+              gen,
+              resolve,
+              reject,
+              _next,
+              _throw,
+              "next",
+              value
+            );
+          }
+          function _throw(err) {
+            asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+          }
+          _next(undefined);
+        });
+      };
+    }
+
+    autocomplete.addListener(
+      "place_changed",
+      /*#__PURE__*/ _asyncToGenerator(
+        /*#__PURE__*/ regeneratorRuntime.mark(function _callee() {
+          var place;
+          return regeneratorRuntime.wrap(function _callee$(_context) {
+            while (1) {
+              switch ((_context.prev = _context.next)) {
+                case 0:
+                  originMarker.setVisible(false);
+                  originLocation = map.getCenter();
+                  place = autocomplete.getPlace();
+
+                  //getting the coordinates of the user input for the radius filter
+                  InputCoords.lat = place.geometry.location.lat();
+                  InputCoords.lng = place.geometry.location.lng();
+                  Locator.searchbarInput = input.value;
+                  ZoomLevel = 10;
+
+                  if (place.geometry) {
+                    _context.next = 6;
+                    break;
+                  }
+
+                  // User entered the name of a Place that was not suggested and
+                  // pressed the Enter key, or the Place Details request failed.
+                  window.alert(
+                    "No address available for input: '" + place.name + "'"
+                  );
+                  return _context.abrupt("return");
+
+                case 6:
+                  // Recenter the map to the selected address
+                  originLocation = place.geometry.location;
+                  map.setCenter(originLocation);
+                  map.setZoom(10);
+                  originMarker.setPosition(originLocation);
+                  originMarker.setVisible(false);
+
+                case 12:
+                case "end":
+                  return _context.stop();
+              }
+            }
+          }, _callee);
+        })
+      )
+    );
+          })
+  }
+
+  function renderSearch() {
+    // Build and add the search bar
+    var card = document.createElement("div");
+    var titleBar = document.createElement("div");
+    var title = document.createElement("h2");
+    var container = document.createElement("div");
+    var input = document.createElement("input");
+    var button = document.createElement("input");
+
+    card.setAttribute("id", "pac-card-placeholder");
+    card.classList.add("pac-card");
+    title.setAttribute("id", "title");
+    title.textContent = "Zehnder installateur in de buurt";
+    titleBar.appendChild(title);
+    container.setAttribute("id", "pac-container");
+    input.setAttribute("id", "pac-input");
+    input.setAttribute("type", "text");
+    input.setAttribute("placeholder", "Voer een adres in");
+    container.appendChild(input);
+    button.setAttribute("type", "button");
+    button.setAttribute("value", "Toon installateurs");
+    card.appendChild(titleBar);
+    card.appendChild(container);
+    // card.appendChild(button);
+
+    return card;
+  }
+
+  var clickedMap = false;
+  function showMap() {
+    if (!clickedMap) {
+      clickedMap = true;
+
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA33HtNtOI4F1aiywevr_K6YaJkAfuN-4w&libraries=places&callback=initMap';
+      document.body.appendChild(script);
+    }
+  }
+  function prepareMap() {
+    var card = renderSearch();
+
+    card.addEventListener("mouseenter", showMap);
+    card.addEventListener("focusin", function () {
+      showMap();
+      window.inputFieldHasFocus = true;
+    });
+    card.addEventListener("click", showMap);
+
+    card.style.position = "absolute";
+    if (window.outerWidth > 767) {
+
+      card.style.top = "251px";
+      card.style.left = 0;
+    }
+    else {
+      card.style.top = 0;
+      card.style.left = (window.outerWidth - 270) / 2 + "px";
+    }
+
+    card.id = "pac-card-placeholder";
+    document.getElementById("node-31333").appendChild(card);
+  }
+
+  prepareMap();
+
+</script>
+

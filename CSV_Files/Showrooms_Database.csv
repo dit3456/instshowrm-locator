@@ -1,0 +1,240 @@
+﻿ID;Naam;Adres;Postcode;Plaats;Tel;Website;Email;Type;Kleur;Longtitude;Latitude;AdresEnPostcode
+1;Baderie Alwako;Hazestraat 51;5555 AB;Valkenswaard;040-2048624;www.baderie.nl/showrooms/alwako/;;Metropolitan Spa;Antraciet;54671981;513498008;Hazestraat 51, Valkenswaard 5555 AB
+2;Aqualon;Vlasstraat 8;5561 AJ;Riethoven;040-2013327;www.aqualon.nl;;Vitalo Bar;Traffic White RAL 9016;53902104;513553081;Vlasstraat 8, Riethoven 5561 AJ
+3;Aqualon;Vlasstraat 8;5561 AJ;Riethoven;040-2013327;www.aqualon.nl;;Charleston;Technoline 0325;53902104;513553081;Vlasstraat 8, Riethoven 5561 AJ
+4;Aqualon;Vlasstraat 8;5561 AJ;Riethoven;040-2013327;www.aqualon.nl;;Vitalo Spa;White Aluminium 9006;53902104;513553081;Vlasstraat 8, Riethoven 5561 AJ
+5;Aqualon;Vlasstraat 8;5561 AJ;Riethoven;040-2013327;www.aqualon.nl;;Metropolitan Spa;Violet 0518;53902104;513553081;Vlasstraat 8, Riethoven 5561 AJ
+6;Loodgietersbedrijf Dellebeke;Kanaalstraat 76;4388 BP;Oost Souburg;0118 461474;;;Subway;Zwart;35974004;514644451;Kanaalstraat 76, Oost Souburg 4388 BP
+7;Loodgietersbedrijf Dellebeke;Kanaalstraat 76;4388 BP;Oost Souburg;0118 461474;;;;;35974004;514644451;Kanaalstraat 76, Oost Souburg 4388 BP
+8;Gernova;Goudenrijderhof 34;5551 VJ;Valkenswaard;040-2040848;www.gernova.nl;;Subway;Pacific Blue 0519;54268003;513497087;Goudenrijderhof 34, Valkenswaard 5551 VJ
+9;Gernova;Goudenrijderhof 34;5551 VJ;Valkenswaard;040-2040848;www.gernova.nl;;Roda Twist;Traffic White RAL 9016;54268003;513497087;Goudenrijderhof 34, Valkenswaard 5551 VJ
+10;Gernova;Goudenrijderhof 34;5551 VJ;Valkenswaard;040-2040848;www.gernova.nl;;Metropolitan Spa;Ruby Red RAL 3003;54268003;513497087;Goudenrijderhof 34, Valkenswaard 5551 VJ
+11;Gernova;Goudenrijderhof 34;5551 VJ;Valkenswaard;040-2040848;www.gernova.nl;;Metropolitan;Antraciet;54268003;513497087;Goudenrijderhof 34, Valkenswaard 5551 VJ
+12;Jan van Erp;Sluisweg 11;6121 JR;Born;046-4857629;www.janvanerp.nl/showrooms/born;;Subway;Zwart;58021395;510353574;Sluisweg 11, Born 6121 JR
+13;Jan van Erp;Sluisweg 11;6121 JR;Born;046-4857629;www.janvanerp.nl/showrooms/born;;Zeno;Traffic White RAL 9016;58021395;510353574;Sluisweg 11, Born 6121 JR
+14;Jan van Erp;Sluisweg 11;6121 JR;Born;046-4857629;www.janvanerp.nl/showrooms/born;;Toga;Traffic White RAL 9016;58021395;510353574;Sluisweg 11, Born 6121 JR
+15;Jan van Erp;Sluisweg 11;6121 JR;Born;046-4857629;www.janvanerp.nl/showrooms/born;;Metropolitan Bar;Antraciet;58021395;510353574;Sluisweg 11, Born 6121 JR
+16;Jan van Erp;Geldropseweg 67;5611 SE;Eindhoven;040-2117446;www.janvanerp.nl/showrooms/eindhoven;;Metropolitan Spa;Antraciet;54888442;514336984;Geldropseweg 67, Eindhoven 5611 SE
+17;Jan van Erp;Geldropseweg 67;5611 SE;Eindhoven;040-2117446;www.janvanerp.nl/showrooms/eindhoven;;Subway;Traffic White RAL 9016;54888442;514336984;Geldropseweg 67, Eindhoven 5611 SE
+18;Jan van Erp;Geldropseweg 67;5611 SE;Eindhoven;040-2117446;www.janvanerp.nl/showrooms/eindhoven;;Toga;Antraciet RAL 7016;54888442;514336984;Geldropseweg 67, Eindhoven 5611 SE
+19;Jan van Erp;Geldropseweg 67;5611 SE;Eindhoven;040-2117446;www.janvanerp.nl/showrooms/eindhoven;;Zeno;Traffic White RAL 9016;54888442;514336984;Geldropseweg 67, Eindhoven 5611 SE
+20;Jan van Erp;Geldropseweg 67;5611 SE;Eindhoven;040-2117446;www.janvanerp.nl/showrooms/eindhoven;;Nova Spa;Antraciet;54888442;514336984;Geldropseweg 67, Eindhoven 5611 SE
+21;Jan van Erp;Belgiëstraat 4;5171 PN;Kaatsheuvel;0416-279039;www.janvanerp.nl/showrooms/kaatsheuvel;;Quaro;Traffic White RAL 9016;50301566;516655144;Belgiëstraat 4, Kaatsheuvel 5171 PN
+22;Jan van Erp;Belgiëstraat 4;5171 PN;Kaatsheuvel;0416-279039;www.janvanerp.nl/showrooms/kaatsheuvel;;Metropolitan Bar;Traffic White RAL 9016;50301566;516655144;Belgiëstraat 4, Kaatsheuvel 5171 PN
+23;Jan van Erp;Belgiëstraat 4;5171 PN;Kaatsheuvel;0416-279039;www.janvanerp.nl/showrooms/kaatsheuvel;;Nova;Traffic White RAL 9016;50301566;516655144;Belgiëstraat 4, Kaatsheuvel 5171 PN
+24;Jan van Erp;Belgiëstraat 4;5171 PN;Kaatsheuvel;0416-279039;www.janvanerp.nl/showrooms/kaatsheuvel;;Charleston Bar;Technoline 0325;50301566;516655144;Belgiëstraat 4, Kaatsheuvel 5171 PN
+25;Jan van Erp;Belgiëstraat 4;5171 PN;Kaatsheuvel;0416-279039;www.janvanerp.nl/showrooms/kaatsheuvel;;Toga;Antraciet;50301566;516655144;Belgiëstraat 4, Kaatsheuvel 5171 PN
+26;Jan van Erp;Rooiseheide 21;5481 SG;Schijndel;073-5493165 ;www.janvanerp.nl/showrooms/schijndel;;Metropolitan Bar;Antraciet;54423017;516050146;Rooiseheide 21, Schijndel 5481 SG
+27;Jan van Erp;Rooiseheide 21;5481 SG;Schijndel;073-5493165 ;www.janvanerp.nl/showrooms/schijndel;;Janda Bow;Beige Quartz 0523;54423017;516050146;Rooiseheide 21, Schijndel 5481 SG
+28;Jan van Erp;Rooiseheide 21;5481 SG;Schijndel;073-5493165 ;www.janvanerp.nl/showrooms/schijndel;;Nova Spa;Traffic White RAL 9016;54423017;516050146;Rooiseheide 21, Schijndel 5481 SG
+29;Jan van Erp;Rooiseheide 21;5481 SG;Schijndel;073-5493165 ;www.janvanerp.nl/showrooms/schijndel;;Zeno;Traffic White RAL 9016;54423017;516050146;Rooiseheide 21, Schijndel 5481 SG
+30;Jan van Erp;Rooiseheide 21;5481 SG;Schijndel;073-5493165 ;www.janvanerp.nl/showrooms/schijndel;;Quaro;Traffic White RAL 9016;54423017;516050146;Rooiseheide 21, Schijndel 5481 SG
+31;Kömhoff;J.F.Kennedylaan 2;5981 XC;Panningen;077-3071215;www.komhoff.nl;;Metropolitan;Antraciet;59716637;513306968;J.F.Kennedylaan 2, Panningen 5981 XC
+32;Kömhoff;J.F.Kennedylaan 2;5981 XC;Panningen;077-3071215;www.komhoff.nl;;Universal;Traffic White RAL 9016;59716637;513306968;J.F.Kennedylaan 2, Panningen 5981 XC
+33;Plieger;Hurksestraat 42-08;5652 AL;Eindhoven;040-2911920;www.plieger.nl/consument/vestigingen/eindhoven/;;Vitalo Bar;Traffic White RAL 9016;54301000;514353763;Hurksestraat 42-08, Eindhoven 5652 AL
+34;Plieger;Hurksestraat 42-08;5652 AL;Eindhoven;040-2911920;www.plieger.nl/consument/vestigingen/eindhoven/;;Charleston Bar;Technoline 0325;54301000;514353763;Hurksestraat 42-08, Eindhoven 5652 AL
+35;Plieger;Nansenbaan 15;4462 GR;Goes;0113-246465;www.plieger.nl/consument/vestigingen/goes/;;Metropolitan Spa;Traffic White RAL 9016;38771051;514881719;Nansenbaan 15, Goes 4462 GR
+36;Plieger;Galjoenweg 43;6222 NS;Maastricht;043-3690721;www.plieger.nl/consument/vestigingen/maastricht/;;Metropolitan Spa;Antraciet;57115505;508730514;Galjoenweg 43, Maastricht 6222 NS
+37;Plieger;Van Voordenpark 19;5301 KP;Zaltbommel;0418-572210;www.plieger.nl/consument/vestigingen/zaltbommel/;;Metropolitan Bar;Traffic White RAL 9016;52599073;517977786;Van Voordenpark 19, Zaltbommel 5301 KP
+38;Tegro;Tongerlosehoefstraat 77-17;5046 NE;Tilburg;013-5434215;www.tegro.nl;;Metropolitan Bar;Traffic White RAL 9016;50691586;515689217;Tongerlosehoefstraat 77-17, Tilburg 5046 NE
+39;Tegro;Tongerlosehoefstraat 77-17;5046 NE;Tilburg;013-5434215;www.tegro.nl;;Subway;Antraciet;50691586;515689217;Tongerlosehoefstraat 77-17, Tilburg 5046 NE
+40;Tibosch;Milrooyseweg 55;5258 KG;Berlicum;073-5032331;www.tibosch.nl;;Charleston;Technoline 0325;54101291;516710631;Milrooyseweg 55, Berlicum 5258 KG
+41;Van Goch;Ambachtsstraat 1a;5391 BS;Nuland;073-5321536;www.fvangoch.nl;;Subway;Antraciet;54419407;517225802;Ambachtsstraat 1a, Nuland 5391 BS
+42;Van Goch;Ambachtsstraat 1a;5391 BS;Nuland;073-5321536;www.fvangoch.nl;;Metropolitan Bar;Antraciet;54419407;517225802;Ambachtsstraat 1a, Nuland 5391 BS
+43;Van der Velden;Ekkersrijt 4202;5692 DE;Son;0499 - 490092;www.veldenverwarming.nl;;Metropolitan Spa;Violet 0518;54711667;515005824;Ekkersrijt 4202, Son 5692 DE
+44;Van der Velden;Ekkersrijt 4202;5692 DE;Son;0499 - 490092;www.veldenverwarming.nl;;Vitalo Bar;Grey aluminium 9007;54711667;515005824;Ekkersrijt 4202, Son 5692 DE
+45;Van der Velden;Ekkersrijt 4202;5692 DE;Son;0499 - 490092;www.veldenverwarming.nl;;Vitalo Spa;Violet 0518;54711667;515005824;Ekkersrijt 4202, Son 5692 DE
+46;Brouwer;Voorstondensestraat 34;6964 CD;Eerbeek;0313-659005;www.brouwer-eerbeek.nl/;;Subway;Chroom;60804277;521118871;Voorstondensestraat 34, Eerbeek 6964 CD
+47;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Ribbon elektrisch;Black Matt 0557;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+48;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Charleston;Technoline 0325;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+49;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Radiapanel;Antraciet Metalic 0346;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+50;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Nova;White Aluminium 9006;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+51;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Vitalo Bar;Antraciet Metalic 0346;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+52;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Roda Twist Spa Air;Strawberry 3770;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+53;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Quaro;Amethyst Quartz 0516;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+54;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Roda Spa;Traffic White RAL 9016;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+55;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Aura E;Traffic White RAL 9016;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+56;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Metropolitan Spa;Prussian Blue 0555;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+57;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Nobis;Chroom;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+58;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Yucca symetrisch;Chroom;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+59;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Nova Neo;Antraciet Metalic 0346;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+60;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Radiavector;Titane 0335;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+61;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Alura Tech;Pure White RAL 9010;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+62;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Fare Tech;Antraciet RAL 7016;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+63;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Subway;Chroom;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+64;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Metropolitan horizontaal;Orange Quartz 0528;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+65;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Universal;Inox look 0332;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+66;Zehnder;Lingenstraat 2;8028 PM ;Zwolle;038-4296911;www.zehnder.nl;verwarming@zehnder.nl;Excelsior;Antraciet Metalic 0346;61644566;525348987;Lingenstraat 2, Zwolle 8028 PM 
+67;Van Erkel Design Radiatoren;Tiendweg Oost 6 ;2941 BV;Lekkerkerk ;0180-663834;www.design-radiator.eu;;Charleston;Technoline 0325;46911796;519035068;Tiendweg Oost 6 , Lekkerkerk  2941 BV
+68;Van Erkel Design Radiatoren;Tiendweg Oost 6 ;2941 BV;Lekkerkerk ;0180-663834;www.design-radiator.eu;;Charleston;Zwart;46911796;519035068;Tiendweg Oost 6 , Lekkerkerk  2941 BV
+69;Van Erkel Design Radiatoren;Tiendweg Oost 6 ;2941 BV;Lekkerkerk ;0180-663834;www.design-radiator.eu;;Charleston;Traffic White RAL 9016;46911796;519035068;Tiendweg Oost 6 , Lekkerkerk  2941 BV
+70;Van Erkel Design Radiatoren;Tiendweg Oost 6 ;2941 BV;Lekkerkerk ;0180-663834;www.design-radiator.eu;;Bank-Radiator;Zwart;46911796;519035068;Tiendweg Oost 6 , Lekkerkerk  2941 BV
+71;Van Erkel Design Radiatoren;Tiendweg Oost 6 ;2941 BV;Lekkerkerk ;0180-663834;www.design-radiator.eu;;Metropolitan;Beige Quartz 0523;46911796;519035068;Tiendweg Oost 6 , Lekkerkerk  2941 BV
+72;Van Erkel Design Radiatoren;Tiendweg Oost 6 ;2941 BV;Lekkerkerk ;0180-663834;www.design-radiator.eu;;Metropolitan Bar;Ruby Red RAL 3003;46911796;519035068;Tiendweg Oost 6 , Lekkerkerk  2941 BV
+73;Van Erkel Design Radiatoren;Tiendweg Oost 6 ;2941 BV;Lekkerkerk ;0180-663834;www.design-radiator.eu;;Roda Air;Grey aluminium 9007;46911796;519035068;Tiendweg Oost 6 , Lekkerkerk  2941 BV
+74;Plieger Hilversum;Nieuwe Havenweg 51;1216 BL;Hilversum;035-6238140;http://www.plieger.nl/consument/vestigingen/hilversum/;;Charleston;Traffic White RAL 9016;51418257;522238408;Nieuwe Havenweg 51, Hilversum 1216 BL
+75;Plieger Hilversum;Nieuwe Havenweg 51;1216 BL;Hilversum;035-6238140;http://www.plieger.nl/consument/vestigingen/hilversum/;;Subway;;51418257;522238408;Nieuwe Havenweg 51, Hilversum 1216 BL
+76;Nijhof;Minervaweg 3;3741 GR;Baarn;035 548 6111;https://www.nijhofbaarn.nl/;info@nijhofbaarn.nl;Subway;;52569161;522233471;Minervaweg 3, Baarn 3741 GR
+77;Centragas van Galen;Mollerusweg 2-6;2031 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Charleston Klinik;Traffic White RAL 9016;46622657;523924681;Mollerusweg 2-6, Haarlem 2031 BZ
+78;Centragas van Galen;Mollerusweg 2-6;2031 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Lateo Neo;Traffic White RAL 9016;46622657;523924681;Mollerusweg 2-6, Haarlem 2031 BZ
+79;Centragas van Galen;Mollerusweg 2-6;2031 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Charleston Bar;Traffic White RAL 9016;46622657;523924681;Mollerusweg 2-6, Haarlem 2031 BZ
+80;Centragas van Galen;Mollerusweg 2-6;2031 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Radiapanel;Natura 0035;46622657;523924681;Mollerusweg 2-6, Haarlem 2031 BZ
+81;Centragas van Galen;Mollerusweg 2-6;2031 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Excelsior;White Quartz 0521;46622657;523924681;Mollerusweg 2-6, Haarlem 2031 BZ
+82;Centragas van Galen;Mollerusweg 2-6;2032 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Metropolitan;Titane 0335;46622657;523924681;Mollerusweg 2-6, Haarlem 2032 BZ
+83;Centragas van Galen;Mollerusweg 2-6;2033 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Plano;Traffic White RAL 9016;46622657;523924681;Mollerusweg 2-6, Haarlem 2033 BZ
+84;Centragas van Galen;Mollerusweg 2-6;2034 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Radiavector;Traffic White RAL 9016;46622657;523924681;Mollerusweg 2-6, Haarlem 2034 BZ
+85;Centragas van Galen;Mollerusweg 2-6;2035 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Stana;Antraciet RAL 7016;46622657;523924681;Mollerusweg 2-6, Haarlem 2035 BZ
+86;Centragas van Galen;Mollerusweg 2-6;2036 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Charleston;4x demo bruin, beige, antraciet en Technoline;46622657;523924681;Mollerusweg 2-6, Haarlem 2036 BZ
+87;Centragas van Galen;Mollerusweg 2-6;2037 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Fina Bar;Antraciet RAL 7016;46622657;523924681;Mollerusweg 2-6, Haarlem 2037 BZ
+88;Centragas van Galen;Mollerusweg 2-6;2038 BZ;Haarlem;023-5513838;https://www.centragas.nl/showroom/;info@centragas.nl;Charleston Bank;Beige;46622657;523924681;Mollerusweg 2-6, Haarlem 2038 BZ
+89;Plieger Utrecht;Amsterdamsestraatweg 632;3555 HX;Utrecht;030-2441925;http://www.plieger.nl/consument/vestigingen/utrecht/;toonzaal.utrecht@plieger.nl;Vitalo Bar;Traffic White RAL 9016;50801243;521119720;Amsterdamsestraatweg 632, Utrecht 3555 HX
+90;Plieger Utrecht;Amsterdamsestraatweg 632;3555 HX;Utrecht;030-2441925;http://www.plieger.nl/consument/vestigingen/utrecht/;toonzaal.utrecht@plieger.nl;Metropolitan Bar;Traffic White RAL 9016;50801243;521119720;Amsterdamsestraatweg 632, Utrecht 3555 HX
+91;Plieger Arnhem;De Overmaat 60;6831 AJ;Arnhem;026-3272977;http://www.plieger.nl/consument/vestigingen/arnhem/;toonzaal.arnhem@plieger.nl;Subway;Traffic White RAL 9016;58837508;519535383;De Overmaat 60, Arnhem 6831 AJ
+92;Tis Stiens;Moundyk 3;9051 AH;Stiens;085-2084160;www.tis-stiens.nl;info@tis-stiens.nl;Nova Spa;Jet Black RAL 9005;57589660;532574990;Moundyk 3, Stiens 9051 AH
+93;Tis Stiens;Moundyk 3;9051 AH;Stiens;085-2084160;www.tis-stiens.nl;info@tis-stiens.nl;Lateo;Traffic White RAL 9016;57589660;532574990;Moundyk 3, Stiens 9051 AH
+94;Tis Stiens;Moundyk 3;9051 AH;Stiens;085-2084160;www.tis-stiens.nl;info@tis-stiens.nl;Yucca;Chroom;57589660;532574990;Moundyk 3, Stiens 9051 AH
+95;Tis Stiens;Moundyk 3;9051 AH;Stiens;085-2084160;www.tis-stiens.nl;info@tis-stiens.nl;Charleston;Technoline 0325;57589660;532574990;Moundyk 3, Stiens 9051 AH
+96;Bex Badkamer Expert;Julianaweg 137a;1131 DH;Volendam;0299-399460;http://www.bexvolendam.nl/;info@bexvolendam.nl;Metropolitan Bar;Antraciet;50767237;525004700;Julianaweg 137a, Volendam 1131 DH
+97;Bex Badkamer Expert;Julianaweg 137a;1131 DH;Volendam;0299-399460;http://www.bexvolendam.nl/;info@bexvolendam.nl;Nova;Brown Quartz 0529;50767237;525004700;Julianaweg 137a, Volendam 1131 DH
+98;Bex Badkamer Expert;Julianaweg 137a;1131 DH;Volendam;0299-399460;http://www.bexvolendam.nl/;info@bexvolendam.nl;Metropolitan;Sand Quartz 0522;50767237;525004700;Julianaweg 137a, Volendam 1131 DH
+99;Bex Badkamer Expert;Julianaweg 137a;1131 DH;Volendam;0299-399460;http://www.bexvolendam.nl/;info@bexvolendam.nl;Metropolitan Spa;Traffic White RAL 9016;50767237;525004700;Julianaweg 137a, Volendam 1131 DH
+100;Bex Badkamer Expert;Julianaweg 137a;1131 DH;Volendam;0299-399460;http://www.bexvolendam.nl/;info@bexvolendam.nl;Charleston;Technoline 0325;50767237;525004700;Julianaweg 137a, Volendam 1131 DH
+101;H & R Tegels en sanitair;Nijverheidsweg 25;2031 CN;Haarlem;023 - 526 14 26;http://www.henrtegels.nl/;info@henrtegels.nl;Metropolitan;Traffic White RAL 9016;46588553;523882263;Nijverheidsweg 25, Haarlem 2031 CN
+102;H & R Tegels en sanitair;Nijverheidsweg 25;2031 CN;Haarlem;023 - 526 14 26;http://www.henrtegels.nl/;info@henrtegels.nl;Quaro;Traffic White RAL 9016;46588553;523882263;Nijverheidsweg 25, Haarlem 2031 CN
+103;H & R Tegels en sanitair;Nijverheidsweg 25;2031 CN;Haarlem;023 - 526 14 26;http://www.henrtegels.nl/;info@henrtegels.nl;Subway;Traffic White RAL 9016;46588553;523882263;Nijverheidsweg 25, Haarlem 2031 CN
+104;Plieger Groningen;Osloweg 55;9723 BG;Groningen;050-3188880;http://www.plieger.nl/consument/vestigingen/;toonzaal.groningen@plieger.nl;Metropolitan;;65961274;532116426;Osloweg 55, Groningen 9723 BG
+105;Plieger Groningen;Osloweg 55;9723 BG;Groningen;050-3188880;http://www.plieger.nl/consument/vestigingen/;toonzaal.groningen@plieger.nl;Metropolitan Spa;;65961274;532116426;Osloweg 55, Groningen 9723 BG
+106;Plieger Groningen;Osloweg 55;9723 BG;Groningen;050-3188880;http://www.plieger.nl/consument/vestigingen/;toonzaal.groningen@plieger.nl;Vitalo;;65961274;532116426;Osloweg 55, Groningen 9723 BG
+107;Plieger Leeuwarden;Zwettestraat 29a;8912 AV;Leeuwarden;058-2123059;http://www.plieger.nl/consument/vestigingen/;toonzaal.leeuwarden@plieger.nl;Metropolitan Bar;;57694433;531902663;Zwettestraat 29a, Leeuwarden 8912 AV
+108;Plieger Leeuwarden;Zwettestraat 29a;8912 AV;Leeuwarden;058-2123059;http://www.plieger.nl/consument/vestigingen/;toonzaal.leeuwarden@plieger.nl;Subway;;57694433;531902663;Zwettestraat 29a, Leeuwarden 8912 AV
+109;Plieger Hengelo;Diamantstraat 5;7554 TA;Hengelo;074-2556565;http://www.plieger.nl/consument/vestigingen/;toonzaal.hengelo@plieger.nl;Metropolitan Spa;;67682527;522433330;Diamantstraat 5, Hengelo 7554 TA
+110;Plieger Alkmaar;Toermalijnstraat 12b;1812 RL;Alkmaar;072-5414620;http://www.plieger.nl/consument/vestigingen/;toonzaal.alkmaar@plieger.nl;Subway;;47456665;526045525;Toermalijnstraat 12b, Alkmaar 1812 RL
+111;Plieger Amersfoort;Nijverheidsweg Noord 95;3812 PL;Amersfoort;033-4220750;http://www.plieger.nl/consument/vestigingen/;toonzaal.amersfoort@plieger.nl;Subway;;53518460;521710321;Nijverheidsweg Noord 95, Amersfoort 3812 PL
+112;Plieger Amersfoort;Nijverheidsweg Noord 95;3812 PL;Amersfoort;033-4220750;http://www.plieger.nl/consument/vestigingen/;toonzaal.amersfoort@plieger.nl;Metropolitan;;53518460;521710321;Nijverheidsweg Noord 95, Amersfoort 3812 PL
+113;Plieger Apeldoorn;Saba 12;7332 BH;Apeldoorn;055-5389999;http://www.plieger.nl/consument/vestigingen/;toonzaal.apeldoorn@plieger.nl;Subway;;59855899;521843121;Saba 12, Apeldoorn 7332 BH
+114;Plieger Haarlem;Heringaweg 6C;2031 BW;Haarlem;023-5539955;http://www.plieger.nl/consument/vestigingen/;toonzaal.haarlem@plieger.nl;Quaro;;46557331;523930571;Heringaweg 6C, Haarlem 2031 BW
+115;Plieger Haarlem;Heringaweg 6C;2031 BW;Haarlem;023-5539955;http://www.plieger.nl/consument/vestigingen/;toonzaal.haarlem@plieger.nl;Metropolitan;;46557331;523930571;Heringaweg 6C, Haarlem 2031 BW
+116;Plieger Zwolle;Schokkerweg 3;8042 PC;Zwolle;038-4250010;http://www.plieger.nl/consument/vestigingen/;toonzaal.zwolle@plieger.nl;Subway;;60563647;525174050;Schokkerweg 3, Zwolle 8042 PC
+117;Plieger Zwolle;Schokkerweg 3;8042 PC;Zwolle;038-4250010;http://www.plieger.nl/consument/vestigingen/;toonzaal.zwolle@plieger.nl;Excelsior;;60563647;525174050;Schokkerweg 3, Zwolle 8042 PC
+118;Plieger Capelle;Rivium 2e straat 2;2909 LG;Capelle a/d Ijssel;010-2885100;http://www.plieger.nl/consument/vestigingen/;toonzaal.capelle@plieger.nl;Subway;;45438806;519109596;Rivium 2e straat 2, Capelle a/d Ijssel 2909 LG
+119;Plieger Capelle;Rivium 2e straat 2;2909 LG;Capelle a/d Ijssel;010-2885100;http://www.plieger.nl/consument/vestigingen/;toonzaal.capelle@plieger.nl;Metropolitan;;45438806;519109596;Rivium 2e straat 2, Capelle a/d Ijssel 2909 LG
+120;Badkamer evolutie;Atoomweg 514a;3542 AB;Utrecht;;http://badkamerevolutie.nl/;info@badkamerevolutie.nl;Metropolitan Bar;;50437811;521186218;Atoomweg 514a, Utrecht 3542 AB
+121;Badkamer evolutie;Atoomweg 514a;3542 AB;Utrecht;;http://badkamerevolutie.nl/;info@badkamerevolutie.nl;Metropolitan Spa;;50437811;521186218;Atoomweg 514a, Utrecht 3542 AB
+122;Badkamer evolutie;Atoomweg 514a;3542 AB;Utrecht;;http://badkamerevolutie.nl/;info@badkamerevolutie.nl;Quaro;;50437811;521186218;Atoomweg 514a, Utrecht 3542 AB
+123;Badkamer evolutie;Atoomweg 514a;3542 AB;Utrecht;;http://badkamerevolutie.nl/;info@badkamerevolutie.nl;Subway elektrisch;;50437811;521186218;Atoomweg 514a, Utrecht 3542 AB
+124;Badkamer evolutie;Atoomweg 514a;3542 AB;Utrecht;;http://badkamerevolutie.nl/;info@badkamerevolutie.nl;Nova;;50437811;521186218;Atoomweg 514a, Utrecht 3542 AB
+125;Badkamer evolutie;Atoomweg 514a;3542 AB;Utrecht;;http://badkamerevolutie.nl/;info@badkamerevolutie.nl;Vitalo Bar;;50437811;521186218;Atoomweg 514a, Utrecht 3542 AB
+126;Badkamer evolutie;Atoomweg 514a;3542 AB;Utrecht;;http://badkamerevolutie.nl/;info@badkamerevolutie.nl;Universal;;50437811;521186218;Atoomweg 514a, Utrecht 3542 AB
+127;Janssen Keuken en Bad;Leukerstraat 65;6004 RD;Weert;0495-541126;https://www.janssenkeukensweert.nl;info@janssen-home-living.nl;Lateo;;57345681;512598268;Leukerstraat 65, Weert 6004 RD
+128;Van Seggeren;Foarwei 183;9298 JH;Kollumerzwaag;0511-444848;http://www.vstechniek.nl/;info@vstechniek.nl;Charleston;;60680638;532606467;Foarwei 183, Kollumerzwaag 9298 JH
+129;Van Seggeren;Foarwei 183;9298 JH;Kollumerzwaag;0511-444848;http://www.vstechniek.nl/;info@vstechniek.nl;Universal;;60680638;532606467;Foarwei 183, Kollumerzwaag 9298 JH
+130;Van Seggeren;Foarwei 183;9298 JH;Kollumerzwaag;0511-444848;http://www.vstechniek.nl/;info@vstechniek.nl;Yucca;;60680638;532606467;Foarwei 183, Kollumerzwaag 9298 JH
+131;Van Seggeren;Foarwei 183;9298 JH;Kollumerzwaag;0511-444848;http://www.vstechniek.nl/;info@vstechniek.nl;Excelsior;;60680638;532606467;Foarwei 183, Kollumerzwaag 9298 JH
+132;Van Seggeren;Foarwei 183;9298 JH;Kollumerzwaag;0511-444848;http://www.vstechniek.nl/;info@vstechniek.nl;Janda Bow;;60680638;532606467;Foarwei 183, Kollumerzwaag 9298 JH
+133;Van Seggeren;Foarwei 183;9298 JH;Kollumerzwaag;0511-444848;http://www.vstechniek.nl/;info@vstechniek.nl;Toga;;60680638;532606467;Foarwei 183, Kollumerzwaag 9298 JH
+134;Van Seggeren;Foarwei 183;9298 JH;Kollumerzwaag;0511-444848;http://www.vstechniek.nl/;info@vstechniek.nl;Nova;;60680638;532606467;Foarwei 183, Kollumerzwaag 9298 JH
+135;Van Seggeren;Foarwei 183;9298 JH;Kollumerzwaag;0511-444848;http://www.vstechniek.nl/;info@vstechniek.nl;Radiavector;;60680638;532606467;Foarwei 183, Kollumerzwaag 9298 JH
+136;P. Meijer bad en tegel;Draadbaan 3;2352 BM;Leiderdorp;071-5890425;http://www.badentegel.nl;info@badentegel.nl;Metropolitan;;45205439;521650767;Draadbaan 3, Leiderdorp 2352 BM
+137;P. Meijer bad en tegel;Draadbaan 3;2352 BM;Leiderdorp;071-5890425;http://www.badentegel.nl;info@badentegel.nl;Subway;;45205439;521650767;Draadbaan 3, Leiderdorp 2352 BM
+138;Sanidrome Huisman;Oostzijde 11a;2801 SB;Gouda;0182-512032;https://sanidrome.nl/huisman-gouda/;huisman.gouda@sanidrome.nl;Charleston;;46870850;520186820;Oostzijde 11a, Gouda 2801 SB
+139;Sanidrome Blankespoor;Handelsweg 10-12;3881 LS;Putten;0341-358844;https://sanidrome.nl/blankespoor-putten;blankespoor@sanidrome.nl;Metropolitan;;55847633;522673220;Handelsweg 10-12, Putten 3881 LS
+140;Sluyk keukens en badkamers;Van Markenstraat 16;2941 BX;Lekkerkerk ;0180-661672;https://www.sluyk.nl/;info@sluyk.nl;Zeno;;46912774;518987217;Van Markenstraat 16, Lekkerkerk  2941 BX
+141;Sluyk keukens en badkamers;Van Markenstraat 16;2941 BX;Lekkerkerk ;0180-661672;https://www.sluyk.nl/;info@sluyk.nl;Metropolitan;;46912774;518987217;Van Markenstraat 16, Lekkerkerk  2941 BX
+142;Sluyk keukens en badkamers;Van Markenstraat 16;2941 BX;Lekkerkerk ;0180-661672;https://www.sluyk.nl/;info@sluyk.nl;Subway;;46912774;518987217;Van Markenstraat 16, Lekkerkerk  2941 BX
+143;Sluyk keukens en badkamers;Van Markenstraat 16;2941 BX;Lekkerkerk ;0180-661672;https://www.sluyk.nl/;info@sluyk.nl;Quaro;;46912774;518987217;Van Markenstraat 16, Lekkerkerk  2941 BX
+144;Tegels en Meer;Luzernestraat 7;2153 GM;Nieuw Vennep;0252-793561;http://www.tegelsenmeer.nl;contact@tegelsenmeer.nl;Yucca;;46480805;522627859;Luzernestraat 7, Nieuw Vennep 2153 GM
+145;Tegels en Meer;Luzernestraat 7;2153 GM;Nieuw Vennep;0252-793561;http://www.tegelsenmeer.nl;contact@tegelsenmeer.nl;Metropolitan;;46480805;522627859;Luzernestraat 7, Nieuw Vennep 2153 GM
+146;Tegels en Meer;Luzernestraat 7;2153 GM;Nieuw Vennep;0252-793561;http://www.tegelsenmeer.nl;contact@tegelsenmeer.nl;Subway;;46480805;522627859;Luzernestraat 7, Nieuw Vennep 2153 GM
+147;Plieger Leiden;Rooseveltstraat 6;2321 BM;Leiden;071-5351700;http://www.plieger.nl/consument/vestigingen/leiden/;toonzaal.leiden@plieger.nl;Subway;;44816821;521467868;Rooseveltstraat 6, Leiden 2321 BM
+148;Plieger Leiden;Rooseveltstraat 6;2321 BM;Leiden;071-5351700;http://www.plieger.nl/consument/vestigingen/leiden/;toonzaal.leiden@plieger.nl;Metropolitan Spa;;44816821;521467868;Rooseveltstraat 6, Leiden 2321 BM
+149;Megadump Dalen;Kleine Veld 45;7751 BG;Dalen;0524-551004;https://www.megadumpdalen.nl;info@megadumpdalen.nl;Subway;Inox look 0332;67577385;527103562;Kleine Veld 45, Dalen 7751 BG
+150;Megadump Dalen;Kleine Veld 45;7751 BG;Dalen;0524-551004;https://www.megadumpdalen.nl;info@megadumpdalen.nl;Quaro;Black Matt 0557;67577385;527103562;Kleine Veld 45, Dalen 7751 BG
+151;Megadump Dalen;Kleine Veld 45;7751 BG;Dalen;0524-551004;https://www.megadumpdalen.nl;info@megadumpdalen.nl;Metropolitan Spa;White Matt 0556 ;67577385;527103562;Kleine Veld 45, Dalen 7751 BG
+152;Brouwer Tuk;Tukseweg 198;8334 RX;Tuk;0521-512983;https://brouwertuk.nl;;Metropolitan Spa;Black Matt 0557;60945155;527974630;Tukseweg 198, Tuk 8334 RX
+153;Vonder Tegels en Sanitair;Kapitein Grantstraat 32;7821 AR;Emmen;0591-708108;https://www.vondertegelsensanitair.nl;;Aura E;;69186144;527688611;Kapitein Grantstraat 32, Emmen 7821 AR
+154;Stobastone;Escudo 1A;8305 BM;Emmeloord;0527-622070;https://www.stobastone.nl;info@stobastone.nl;Aura E;;57839636;527125013;Escudo 1A, Emmeloord 8305 BM
+155;Simon de Haas;Hoekerweg 7;8042 PH;Zwolle;038-4221155;https://www.simondehaas.nl;showroom@simondehaas.nl;Quaro;Zwart;60528001;525127231;Hoekerweg 7, Zwolle 8042 PH
+156;Simon de Haas;Hoekerweg 7;8042 PH;Zwolle;038-4221155;https://www.simondehaas.nl;showroom@simondehaas.nl;Subway elektrisch;Zwart;60528001;525127231;Hoekerweg 7, Zwolle 8042 PH
+157;Badkamer voordeelshop;Vlamoven 17;6826 TM;Arnhem;026-3823379;https://www.badkamervoordeelshop.nl;arnhem@badkamervoordeelshop.nl;Aura E;;59588646;519762737;Vlamoven 17, Arnhem 6826 TM
+158;Badkamer voordeelshop;Transportweg 5a;7007 CL;Doetinchem;0314-363680;https://www.badkamervoordeelshop.nl;doetinchem@badkamervoordeelshop.nl;Aura E;;62788709;519481724;Transportweg 5a, Doetinchem 7007 CL
+159;Badkamer voordeelshop;Hanzeweg 32;7418 AT;Deventer;0570-745078;https://www.badkamervoordeelshop.nl;deventer@badkamervoordeelshop.nl;Aura E;;61768816;522490078;Hanzeweg 32, Deventer 7418 AT
+160;Badkamer voordeelshop;Hadrianussingle 34;6642 AJ;Beuningen;024-2049031;https://www.badkamervoordeelshop.nl;beuningen@badkamervoordeelshop.nl;Aura E;;57512450;518549499;Hadrianussingle 34, Beuningen 6642 AJ
+161;Saverne Groothandel BV;Philipsstraat 28;2722 NA;Zoetermeer;079-3315454;https://www.saverne.nl;info@saverne.nl;Metropolitan;;45133915;520510863;Philipsstraat 28, Zoetermeer 2722 NA
+162;Saverne Groothandel BV;Philipsstraat 28;2722 NA;Zoetermeer;079-3315454;https://www.saverne.nl;info@saverne.nl;Charleston;;45133915;520510863;Philipsstraat 28, Zoetermeer 2722 NA
+163;Saverne Groothandel BV;Philipsstraat 28;2722 NA;Zoetermeer;079-3315454;https://www.saverne.nl;info@saverne.nl;Vitalo;;45133915;520510863;Philipsstraat 28, Zoetermeer 2722 NA
+164;Saverne Groothandel BV;Philipsstraat 28;2722 NA;Zoetermeer;079-3315454;https://www.saverne.nl;info@saverne.nl;Subway elektrisch;;45133915;520510863;Philipsstraat 28, Zoetermeer 2722 NA
+165;Saverne Groothandel BV;Philipsstraat 28;2722 NA;Zoetermeer;079-3315454;https://www.saverne.nl;info@saverne.nl;Quaro;;45133915;520510863;Philipsstraat 28, Zoetermeer 2722 NA
+166;P. Jellesma;Slotweg 3;8521 MA;Sint Nicolaasga;0513-434568;http://www.jellesma-installaties.nl/;info@jellesma-installaties.nl;Aura E;;57426843;529207792;Slotweg 3, Sint Nicolaasga 8521 MA
+167;P. Jellesma;Slotweg 3;8521 MA;Sint Nicolaasga;0513-434568;http://www.jellesma-installaties.nl/;info@jellesma-installaties.nl;Metropolitan Spa;Black Matt 0557;57426843;529207792;Slotweg 3, Sint Nicolaasga 8521 MA
+168;P. Jellesma;Slotweg 3;8521 MA;Sint Nicolaasga;0513-434568;http://www.jellesma-installaties.nl/;info@jellesma-installaties.nl;Vitalo Spa;Pacific Blue 0519;57426843;529207792;Slotweg 3, Sint Nicolaasga 8521 MA
+169;SK tegels en sanitair;Rooilijn 4;9231 DZ;Surhuisterveen;0512-360358;https://tegelcentersk.nl/;info@tegelcentersk.nl;Aura E;;61796344;531744751;Rooilijn 4, Surhuisterveen 9231 DZ
+170;SK tegels en sanitair;Rooilijn 4;9231 DZ;Surhuisterveen;0512-360358;https://tegelcentersk.nl/;info@tegelcentersk.nl;Metropolitan Spa;Black Matt 0557;61796344;531744751;Rooilijn 4, Surhuisterveen 9231 DZ
+171;De Studio Keukens & Bad;Wolga 3;2941 BK;Den Haag;070-4449697;https://www.destudiokeukensenbad.nl/;info@destudiokeukensenbad.nl;Metropolitan Spa;Traffic White RAL 9016;43844231;520655147;Wolga 3, Den Haag 2941 BK
+172;Douchezaak;Eendenparkweg 3;3852 LC;Ermelo;0341-768999;https://douchezaak.nl/;info@douchezaak.nl;Quaro;Traffic White RAL 9016;56247779;523201649;Eendenparkweg 3, Ermelo 3852 LC
+173;Plieger Hilversum;Nieuwe Havenweg 51;1216 BL;Hilversum;035-6238140;http://www.plieger.nl/consument/vestigingen/hilversum/;;Nobis;Chroom;51418257;522238408;Nieuwe Havenweg 51, Hilversum 1216 BL
+174;Feenstra Keuken en Bad;Woldmeentherand 1;8332 JE;Steenwijk;0521-522772;http://feenstrakeukenenbad.nl/vestigingen/steenwijk/;info@feenstrakeukenenbad.nl;Metropolitan Spa;Antraciet RAL 7016;61238707;527982385;Woldmeentherand 1, Steenwijk 8332 JE
+175;Badkamerwarenhuis & Cre8kitchen;Zoom 1;9231 DX;Surhuisterveen;0512-232008;https://www.badkamerwarenhuis.nl/;surhuisterveen@badkamerwarenhuis.nl;Metropolitan Spa;Black Matt 0557;61830820;531755105;Zoom 1, Surhuisterveen 9231 DX
+176;Badkamerwarenhuis & Cre8kitchen;Zoom 1;9231 DX;Surhuisterveen;0512-232008;https://www.badkamerwarenhuis.nl/;surhuisterveen@badkamerwarenhuis.nl;Aura E;Traffic White RAL 9016;61830820;531755105;Zoom 1, Surhuisterveen 9231 DX
+177;Badkamerwarenhuis & Cre8kitchen;Zoom 1;9231 DX;Surhuisterveen;0512-232008;https://www.badkamerwarenhuis.nl/;surhuisterveen@badkamerwarenhuis.nl;Yucca;Inox look 0332;61830820;531755105;Zoom 1, Surhuisterveen 9231 DX
+178;Badkamerwarenhuis & Cre8kitchen;Zoom 1;9231 DX;Surhuisterveen;0512-232008;https://www.badkamerwarenhuis.nl/;surhuisterveen@badkamerwarenhuis.nl;Quaro;Gold look 0514;61830820;531755105;Zoom 1, Surhuisterveen 9231 DX
+179;Janijko;Dalweg 11;9231 HW;Surhuisterveen;0512-364891;https://www.janijko.nl/;;Aura E;Traffic White RAL 9016;61856034;531828099;Dalweg 11, Surhuisterveen 9231 HW
+180;Janijko;Dalweg 11;9231 HW;Surhuisterveen;0512-364891;https://www.janijko.nl/;;Quaro;Black Matt 0557;61856034;531828099;Dalweg 11, Surhuisterveen 9231 HW
+181;Janijko;Dalweg 11;9231 HW;Surhuisterveen;0512-364891;https://www.janijko.nl/;;Forma Spa;Black Matt 0557;61856034;531828099;Dalweg 11, Surhuisterveen 9231 HW
+182;Sanitair en Tegelcentrum ;Scheldestraat 8;1823 WB;Alkmaar;072-5201065;http://www.sanitair-tegel.nl/;info@sanitair-tegel.nl;Metropolitan Bar;Traffic White RAL 9016;47638593;526301913;Scheldestraat 8, Alkmaar 1823 WB
+183;Versani Alkmaar;Pettemerstraat 18;1823 CW;Alkmaar;072-5280892;https://versani.nl/;info@versani.nl;Metropolitan Spa;Black Matt 0557;47519955;526375700;Pettemerstraat 18, Alkmaar 1823 CW
+184;Versani Alkmaar;Pettemerstraat 18;1823 CW;Alkmaar;072-5280892;https://versani.nl/;info@versani.nl;Charleston;Traffic Back Matt RAL 9217 ;47519955;526375700;Pettemerstraat 18, Alkmaar 1823 CW
+185;Versani Alkmaar;Pettemerstraat 18;1823 CW;Alkmaar;072-5280892;https://versani.nl/;info@versani.nl;Aura E;Traffic White RAL 9016;47519955;526375700;Pettemerstraat 18, Alkmaar 1823 CW
+186;Tegelshowroom Hoorn;Schoepenweg 59B;8243 PX;Lelystad;0320-257625;https://www.tegelzetwerken.nl/;info@tegelzetwerken.nl;Charleston;Technoline 0325;54519540;525018970;Schoepenweg 59B, Lelystad 8243 PX
+187;Tegelshowroom Hoorn;Schoepenweg 59B;8243 PX;Lelystad;0320-257625;https://www.tegelzetwerken.nl/;info@tegelzetwerken.nl;Vitalo Bar;Bruin;54519540;525018970;Schoepenweg 59B, Lelystad 8243 PX
+188;Tegelshowroom Hoorn;Schoepenweg 59B;8243 PX;Lelystad;0320-257625;https://www.tegelzetwerken.nl/;info@tegelzetwerken.nl;Metropolitan (MEV);Traffic White RAL 9016;54519540;525018970;Schoepenweg 59B, Lelystad 8243 PX
+189;Tegelshowroom Hoorn;Schoepenweg 59B;8243 PX;Lelystad;0320-257625;https://www.tegelzetwerken.nl/;info@tegelzetwerken.nl;Zeno;Antraciet;54519540;525018970;Schoepenweg 59B, Lelystad 8243 PX
+190;Megadump Wormer;Papiermakerstraat 1;1531 NA;Wormer;075-7400020;https://www.megadumpwormer.nl/;info@megadumpwormer.nl;Metropolitan Spa;Traffic White RAL 9016;48118606;524904886;Papiermakerstraat 1, Wormer 1531 NA
+191;Megadump Wormer;Papiermakerstraat 1;1531 NA;Wormer;075-7400020;https://www.megadumpwormer.nl/;info@megadumpwormer.nl;Subway;Black Matt 0557;48118606;524904886;Papiermakerstraat 1, Wormer 1531 NA
+192;Tegelhuis Badkamers en Tegels;Deventerseweg 11;2994 LE;Barendrecht ;0180-646810;https://www.tegelhuis.nl;info@tegelhuis.nl;Subway;Bruin/RVS/Antraciet;45121937;518606624;Deventerseweg 11, Barendrecht  2994 LE
+193;Tegelhuis Badkamers en Tegels;Deventerseweg 11;2994 LE;Barendrecht ;0180-646810;https://www.tegelhuis.nl;info@tegelhuis.nl;Charleston;Technoline 0325;45121937;518606624;Deventerseweg 11, Barendrecht  2994 LE
+194;Tegelhuis Badkamers en Tegels;Deventerseweg 11;2994 LE;Barendrecht ;0180-646810;https://www.tegelhuis.nl;info@tegelhuis.nl;Quaro;Traffic White RAL 9016;45121937;518606624;Deventerseweg 11, Barendrecht  2994 LE
+195;Tegelhuis Badkamers en Tegels;Deventerseweg 11;2994 LE;Barendrecht ;0180-646810;https://www.tegelhuis.nl;info@tegelhuis.nl;Vitalo Spa;;45121937;518606624;Deventerseweg 11, Barendrecht  2994 LE
+196;M.A. Vos BV;iepenlaan 14 - 14a;1406 PV;Bussum;035-6937018;http://www.vosbadkamers.nl/;info@mavosbv.nl;Metropolitan;Traffic White RAL 9016;51581789;522722239;iepenlaan 14 - 14a, Bussum 1406 PV
+197;M.A. Vos BV;iepenlaan 14 - 14a;1406 PV;Bussum;035-6937018;http://www.vosbadkamers.nl/;info@mavosbv.nl;Charleston;Technoline 0325;51581789;522722239;iepenlaan 14 - 14a, Bussum 1406 PV
+198;M.A. Vos BV;iepenlaan 14 - 14a;1406 PV;Bussum;035-6937018;http://www.vosbadkamers.nl/;info@mavosbv.nl;Vitalo Bar;Cream RAL 9001;51581789;522722239;iepenlaan 14 - 14a, Bussum 1406 PV
+199;M.A. Vos BV;iepenlaan 14 - 14a;1406 PV;Bussum;035-6937018;http://www.vosbadkamers.nl/;info@mavosbv.nl;Subway;White Matt 0556 ;51581789;522722239;iepenlaan 14 - 14a, Bussum 1406 PV
+200;M.A. Vos BV;iepenlaan 14 - 14a;1406 PV;Bussum;035-6937018;http://www.vosbadkamers.nl/;info@mavosbv.nl;Ribbon;Black Matt 0557;51581789;522722239;iepenlaan 14 - 14a, Bussum 1406 PV
+201;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Ribbon;Traffic Black RAL 9017;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+202;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Metropolitan Bar;Sand Quartz 0522;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+203;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Aura E;;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+204;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Zeno;Traffic White RAL 9016;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+205;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Subway;Traffic White RAL 9016;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+206;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Vitalo Spa;Horizon Blue 0520;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+207;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Radiapanel;White Matt 0556 ;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+208;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Roda Spa;Chinchilla 0064;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+209;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Quaro;Sand Quartz 0522;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+210;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Charleston Bar;Technoline 0325;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+211;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Ribbon;Black Matt 0557;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+212;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Subway;Volcanic 0336;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+213;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Metropolitan Bar;Black Matt 0557;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+214;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Metropolitan verticaal;Inox look 0332;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+215;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Yucca;Spring green 0846;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+216;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Ribbon;Ruby Red RAL 3003;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+217;Gevier Dales;Rumpsterweg 8b;3981 AK;Bunnik;030-6571299;http://www.gevierdales.nl;showroom.bunnik@gevierdales.nl;Roda Twist Spa Air;Violet 0518;52170301;520618350;Rumpsterweg 8b, Bunnik 3981 AK
+218;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Vitalo Bar elektrisch;Black Matt 0557;60747966;531179965;De Bolder 79, Drachten 9206 AP
+219;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Metropolitan Bar elektrisch;Orange Quartz 0528;60747966;531179965;De Bolder 79, Drachten 9206 AP
+220;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Quaro elektrisch;Sand Quartz 0522;60747966;531179965;De Bolder 79, Drachten 9206 AP
+221;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Aura E;Traffic White RAL 9016;60747966;531179965;De Bolder 79, Drachten 9206 AP
+222;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Metropolitan Spa;Antraciet Metalic 0346;60747966;531179965;De Bolder 79, Drachten 9206 AP
+223;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Toga;Chroom;60747966;531179965;De Bolder 79, Drachten 9206 AP
+224;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Universal;Volcanic 0336;60747966;531179965;De Bolder 79, Drachten 9206 AP
+225;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Radiapanel;White Quartz 0521;60747966;531179965;De Bolder 79, Drachten 9206 AP
+226;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Subway elektrisch;Antraciet RAL 7016;60747966;531179965;De Bolder 79, Drachten 9206 AP
+227;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Roda Spa;Traffic White RAL 9016;60747966;531179965;De Bolder 79, Drachten 9206 AP
+228;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Ribbon elektrisch;Black Matt 0557;60747966;531179965;De Bolder 79, Drachten 9206 AP
+229;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Quaro;Black Matt 0557;60747966;531179965;De Bolder 79, Drachten 9206 AP
+230;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Subway;Antraciet Metalic 0346;60747966;531179965;De Bolder 79, Drachten 9206 AP
+231;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Ribbon;Ruby Red RAL 3003;60747966;531179965;De Bolder 79, Drachten 9206 AP
+232;Gevier Dales;De Bolder 79;9206 AP;Drachten;0512-541311;http://www.gevierdales.nl;showroom.drachten@gevierdales.nl;Charleston Bar;Technoline 0325;60747966;531179965;De Bolder 79, Drachten 9206 AP
+233;Esselink Bouwmaterialen B.V.;Industrieweg 35;3241 MA;Middelharnis;0187-475460;https://www.bouwcenter.nl/esselink/;info@esselink.nl;Aura E;Traffic White RAL 9016;41870702;517610174;Industrieweg 35, Middelharnis 3241 MA
+234;Esselink Bouwmaterialen B.V.;Industrieweg 35;3241 MA;Middelharnis;0187-475460;https://www.bouwcenter.nl/esselink/;info@esselink.nl;Subway elektrisch;Traffic White RAL 9016;41870702;517610174;Industrieweg 35, Middelharnis 3241 MA
+235;Esselink Bouwmaterialen B.V.;Industrieweg 35;3241 MA;Middelharnis;0187-475460;https://www.bouwcenter.nl/esselink/;info@esselink.nl;Ribbon elektrisch;Traffic White RAL 9016;41870702;517610174;Industrieweg 35, Middelharnis 3241 MA
+236;Galvano Eindhoven;Dillenburgstraat 12;5652 AP;Eindhoven;040-2141516;https://www.galvano.nl/onze-showroom;showroom@galvano.nl;Metropolitan Spa elektrisch;;54386677;514322178;Dillenburgstraat 12, Eindhoven 5652 AP
+237;Wiesenekker;Achterbergsestraatweg 128;3911 CX;Rhenen;0317-618390;https://www.wiesenekker.nl/;info@wiesenekker.nl;Metropolitan Bar;Traffic White RAL 9016;55816863;519666999;Achterbergsestraatweg 128, Rhenen 3911 CX
+238;Molenaar Badkamers Roden;Westeresch 8;9301 ZW;Roden;0341-232300;https://www.molenaar.nl/winkels/roden/;info@molenaar.nl;Subway elektrisch;Traffic White RAL 9016;64327333;531467477;Westeresch 8, Roden 9301 ZW
+239;Molenaar Badkamers Roden;Westeresch 8;9301 ZW;Roden;0341-232300;https://www.molenaar.nl/winkels/roden/;info@molenaar.nl;Roda Twist Spa Air;Traffic White RAL 9016;64327333;531467477;Westeresch 8, Roden 9301 ZW
