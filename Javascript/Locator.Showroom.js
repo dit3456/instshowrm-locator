@@ -83,7 +83,7 @@ Locator.Showroom = (function (){
         FilteredShowrooms.features = [];
         AllShowrooms.features = [];
         return new Promise(function(resolve, reject){
-            fetch('../CSV_Files/Showrooms_Database.csv')
+            fetch('https://dit3456.github.io/instshowrm-locator/CSV_Files/Showrooms_Database.csv')
                 .then(response => response.text())
                 .then(data => {
                     parsedData = Papa.parse(data, {
