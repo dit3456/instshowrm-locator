@@ -116,7 +116,7 @@ const Locator = (function (){
     const OpenNav = function (){
         document.getElementById("pac-card").style.animation = "unfold 0.5s";
         document.getElementById("pac-card").style.width = "25%";
-        document.getElementById("main").style.animation = "slideRight 0.5s";
+        document.getElementById("main").style.animation = "slideRight 0.3s";
         document.getElementById("main").style.marginLeft = "25%";
         document.getElementById("main").className = "arrow left";
 
@@ -125,7 +125,7 @@ const Locator = (function (){
     const CloseNav = function (){
         document.getElementById("pac-card").style.animation = "fold 0.5s";
         document.getElementById("pac-card").style.width = "0";
-        document.getElementById("main").style.animation = "slideLeft 0.5s";
+        document.getElementById("main").style.animation = "slideLeft 0.3s";
         document.getElementById("main").style.marginLeft= "0";
         document.getElementById("main").className = "arrow right";
     }
