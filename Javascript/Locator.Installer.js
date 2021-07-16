@@ -69,7 +69,7 @@ Locator.Installer = (function (){
         AllInstallers.features = [];
 
         return new Promise(function(resolve, reject){
-            fetch('https://dit3456.github.io/instshowrm-locator/CSV_Files/Installers_Database2.csv')
+            fetch('https://dit3456.github.io/instshowrm-locator/CSV_Files/Installers_Database.csv')
                 .then(response => response.text())
                 .then(data => {
                     parsedData = Papa.parse(data, {
