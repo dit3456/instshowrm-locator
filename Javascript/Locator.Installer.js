@@ -150,7 +150,7 @@ Locator.Installer = (function (){
 
     //Converts the data from the csv file into a json element
     const ConvertArrayToJson = function (jsonData) {
-        if (jsonData["Account ID"] !== "") {
+        if (jsonData["SAP ID"] !== "") {
 
             //turns the coordinates into a string
             let latString = jsonData["Lattitude"].toString();
@@ -169,11 +169,11 @@ Locator.Installer = (function (){
 
             //get mail addresses
             let email;
-            if (jsonData["EMail_Account"] == "#") {
+            if (jsonData["E-Mail"] == "#") {
                 email = "Geen mailadres beschikbaar";
             }
             else {
-                email = jsonData["EMail_Account"];
+                email = jsonData["E-Mail"];
             }
 
             let installer = {
@@ -184,11 +184,11 @@ Locator.Installer = (function (){
                     address: res[0],
                     zipcode: res[1],
                     email: email,
-                    website: "-",
-                    phone: jsonData["Phone_Account | Attribute Value Account"],
-                    storeid: jsonData["Account ID"],
-                    maintenance: jsonData["ZNL_5411"],
-                    newProduct: jsonData["ZNL_5412"],
+                    website: jsonData["Web Site"],
+                    phone: jsonData["Phone"],
+                    storeid: jsonData["SAP ID"],
+                    maintenance: jsonData["ZNL_5000"],
+                    newProduct: jsonData["ZNL_5410"],
                     malfunction: jsonData["ZNL_5413"],
                 }
             };
