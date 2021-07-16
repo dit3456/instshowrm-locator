@@ -184,7 +184,7 @@ Locator.Installer = (function (){
                     address: res[0],
                     zipcode: res[1],
                     email: email,
-                    website: "-",
+                    website: jsonData["Web Site"],
                     phone: jsonData["Phone_Account | Attribute Value Account"],
                     storeid: jsonData["Account ID"],
                     maintenance: jsonData["ZNL_5411"],
