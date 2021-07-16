@@ -69,7 +69,7 @@ Locator.Installer = (function (){
         AllInstallers.features = [];
 
         return new Promise(function(resolve, reject){
-            fetch('https://dit3456.github.io/instshowrm-locator/CSV_Files/Installers_Database.csv')
+            fetch('../CSV_Files/Installers_Database.csv')
                 .then(response => response.text())
                 .then(data => {
                     parsedData = Papa.parse(data, {
@@ -153,13 +153,13 @@ Locator.Installer = (function (){
         if (jsonData["Account ID"] !== "") {
 
             //turns the coordinates into a string
-            let latString = jsonData["Latitude"].toString();
+            let latString = jsonData["Lattitude"].toString();
             //Places a dot so the coordinates are correct
             let lat = latString.substring(0, 2) + "." + latString.substring(2, latString.length);
             //Parses the string back to a float
             lat = parseFloat(lat);
 
-            let lngString = jsonData["Longitude"].toString();
+            let lngString = jsonData["Longtitude"].toString();
             let lng = lngString.substring(0, 1) + "." + lngString.substring(1, lngString.length);
             lng = parseFloat(lng);
 
@@ -169,11 +169,11 @@ Locator.Installer = (function (){
 
             //get mail addresses
             let email;
-            if (jsonData["E-Mail"] == "#") {
+            if (jsonData["EMail_Account"] == "#") {
                 email = "Geen mailadres beschikbaar";
             }
             else {
-                email = jsonData["E-Mail"];
+                email = jsonData["EMail_Account"];
             }
 
             let installer = {
@@ -184,11 +184,11 @@ Locator.Installer = (function (){
                     address: res[0],
                     zipcode: res[1],
                     email: email,
-                    website: jsonData["Web Site"],
-                    phone: jsonData["Phone"],
+                    website: "-",
+                    phone: jsonData["Phone_Account | Attribute Value Account"],
                     storeid: jsonData["Account ID"],
-                    maintenance: jsonData["ZNL_5000"],
-                    newProduct: jsonData["ZNL_5410"],
+                    maintenance: jsonData["ZNL_5411"],
+                    newProduct: jsonData["ZNL_5412"],
                     malfunction: jsonData["ZNL_5413"],
                 }
             };
