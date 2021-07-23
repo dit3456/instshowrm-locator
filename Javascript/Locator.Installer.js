@@ -175,6 +175,15 @@ Locator.Installer = (function (){
             else {
                 email = jsonData["EMail_Account"];
             }
+            
+            //get website
+            let website;
+            if (jsonData["Web Site"] == "#") {
+                website = "Geen website beschikbaar";
+            }
+            else {
+                website = jsonData["Web Site"];
+            }
 
             let installer = {
                 geometry: {type: "point", coordinates: [lng, lat]},
@@ -184,7 +193,7 @@ Locator.Installer = (function (){
                     address: res[0],
                     zipcode: res[1],
                     email: email,
-                    website: jsonData["Web Site"],
+                    website: website,
                     phone: jsonData["Phone_Account | Attribute Value Account"],
                     storeid: jsonData["Account ID"],
                     maintenance: jsonData["ZNL_5411"],
