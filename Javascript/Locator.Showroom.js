@@ -125,6 +125,7 @@ Locator.Showroom = (function (){
                     name: jsonData["Naam"],
                     address: jsonData["Adres"],
                     zipcode: jsonData["Postcode"],
+                    plaats: jsonData["Plaats"],
                     email: jsonData["Email"],
                     website: jsonData["Website"],
                     phone: jsonData["Tel"],
